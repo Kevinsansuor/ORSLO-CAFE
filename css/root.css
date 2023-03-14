@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+:root{
+    --colorRojo: #D03B40;
+    --colorBeige: #DED6C0;
+    --colorBlanco: #F5F0ED;
+    --colorNegro: #241D1B;
+    --colorTextoClaro: #F5F0ED;
+    --colorTextoOscuro:#241D1B;
+
+    --tipografiaTexto: 'Libre Baskerville', serif;
+    --encabezado: 64px;
+    --titulo:48px;
+    --subtitulo:30px;
+    --texto: 20px;
+    
+
+}
+
+html, body{
+    box-sizing: border-box;
+    transition: .5s all;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    background-color: var(--colorBlanco);
+}
+
+.encabezado{
+    font-family: var(--tipografiaTexto);
+    font-size: var(--encabezado);
+}
+
+.titulo{
+    font-family: var(--tipografiaTexto);
+    font-size: var(--titulo);
+}
+
+.subtitulo{
+    font-family: var(--tipografiaTexto);
+    font-size: var(--subtitulo);
+}
+
+.texto{
+    font-family: var(--tipografiaTexto);
+    font-size: var(--texto);
+}
+
+.banner_hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background: rgb(222,214,192);
+background: linear-gradient(180deg, rgba(222,214,192,0.5) 0%, rgba(245,240,237,1) 100%);
+}
+
+.banner_hero .banner_content{
+    position: static;
+    background: url(/assets/imagenes/Fondo1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 90vh;
+    border-radius: 25px;
+    padding: .5rem;
+    box-shadow:  20px 20px 60px #bdb6a3,
+                -20px -20px 60px #fff6dd;
+}
+
+.banner_hero .banner_textos{
+    text-align: center;
+    color: var(--colorBlanco);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_textos .encabezado{
+    width: 60%;
+    margin-bottom: 3.5rem;
+}
+
+.banner_textos .texto{
+    width: 60%;
+    margin-bottom: 5.5rem;
+}
+
+.banner_textos .boton{
+    background-color: var(--colorRojo);
+    padding: 1rem 3.5rem;
+    border-radius: 10px;
+    border: solid var(--colorBlanco);
+    box-shadow:  5px 5px 20px 3px #221b19;
+    transition: .5s;
+}
+
+.boton:hover{
+    transition: .2s linear ;
+    backdrop-filter: blur(30px) ;
+    -webkit-backdrop-filter: blur(30px) ;
+    background-color: rgba(245, 240, 237, 0);
+}
+
+.banner_textos .boton .texto_boton{
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 950px) and (min-width: 850px)  {
+    .banner_textos .encabezado{
+    width: 85%;
+    }
+    .banner_textos .texto{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 750px)  {
+    .banner_textos .encabezado{
+    width: 90%;
+    }
+    .banner_textos .texto{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 650px)  {
+    .banner_textos .encabezado{
+    width: 95%;
+    }
+    .banner_textos .texto{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .banner_textos .encabezado{
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    }
+    .banner_textos .texto{
+        width: 100%;
+        padding: .5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .banner_textos .encabezado{
+        font-size: var(--titulo);
+    }
+}
