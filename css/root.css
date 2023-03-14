@@ -10,10 +10,15 @@
     --tipografiaTexto: 'Libre Baskerville', serif;
     --encabezado: 64px;
     --titulo:48px;
-    --subtitulo:30px;
+    --subtitulo:24px;
     --texto: 20px;
     
 
+}
+
+hr{
+    border-bottom: dashed var(--colorNegro);
+    margin-bottom: .5rem;
 }
 
 html, body{
@@ -38,6 +43,7 @@ html, body{
 .subtitulo{
     font-family: var(--tipografiaTexto);
     font-size: var(--subtitulo);
+    font-weight: bolder;
 }
 
 .texto{
