@@ -1,8 +1,9 @@
 .nav_bar{
     position: fixed;
     width: 100%;
-    height: auto;
     z-index: 10;
+    position: top;
+    padding-top: 20px;
 }
 
 .nav_bar .items{

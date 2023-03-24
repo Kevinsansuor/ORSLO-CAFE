@@ -1,0 +1,280 @@
+.diferencial{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: rgb(208,59,64);
+background: -moz-linear-gradient(0deg, rgba(208,59,64,1) 92%, rgba(245,240,237,1) 100%), (180deg, rgba(208,59,64,1) 92%, rgba(245,240,237,1) 100%);
+    justify-content: center;
+    padding: 10vh 0;
+    margin-bottom: 10vh;
+}
+
+.diferencial .contenedor{
+    width: 90%;
+    color: var(--colorTextoClaro);
+}
+
+.diferencial .contenedor .contenedor_one{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10vh;
+}
+
+.contenedor .contenedor_one .ventana{
+    width: 50%;
+    max-height: 125vh;
+    overflow: hidden;
+    -webkit-border-top-left-radius: 15000px;
+-webkit-border-top-right-radius: 15000px;
+-moz-border-radius-topleft: 15000px;
+-moz-border-radius-topright: 15000px;
+border-top-left-radius: 15000px;
+border-top-right-radius: 15000px;
+/* border-right: solid 10px var(--colorBeige);
+border-bottom: solid 10px var(--colorBeige);
+border-top: solid 5px var(--colorBeige); */
+}
+
+.contenedor .contenedor_one .ventana img{
+    width: 100%;
+    max-height: 125vh;
+    object-fit: cover;
+}
+
+.contenedor .contenedor_one .texto{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+    margin: auto;
+}
+
+.diferencial .contenedor .contenedor_two{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: auto;
+}
+
+.contenedor .contenedor_two .ventana{
+    order: 2;
+    width: 50%;
+    max-height: 125vh;
+    overflow: hidden;
+-webkit-border-bottom-right-radius: 15000px;
+-webkit-border-bottom-left-radius: 15000px;
+-moz-border-radius-bottomright: 15000px;
+-moz-border-radius-bottomleft: 15000px;
+border-bottom-right-radius: 15000px;
+border-bottom-left-radius: 15000px;
+/* border-left: solid 10px var(--colorBeige);
+border-bottom: solid 10px var(--colorBeige);
+border-top: solid 5px var(--colorBeige); */
+}
+
+.contenedor .contenedor_two .ventana img{
+    width: 100%;
+    max-height: 125vh;
+    object-fit: cover;
+}
+
+.contenedor .contenedor_two .texto{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin: auto;
+}
+
+
+.diferencial_domis{
+    background-color: var(--colorRojo);
+    color: var(--colorTextoClaro);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0;
+    position: relative;
+    margin: 10vh 0 0 0;
+}
+
+.diferencial_domis .container{
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.diferencial_domis .container .texto{
+    margin: auto;
+    text-align: end;
+    width: 50%;
+}
+
+.diferencial_domis .container .imagen{
+    width: 50%;
+    background-color: var(--colorBlanco);
+    border-radius: 25px;
+}
+
+.diferencial .container .imagen .container{
+    width: 100px;
+}
+
+.diferencial .container .imagen .container img{
+    width: 100px;
+    object-fit: contain;
+}
+
+
+
+.diferencial_domis .btn_domi{
+    position: absolute;
+    z-index: 5;
+    top: 80%;
+}
+
+.diferencial_domis .btn_domi .btn{
+    background-color: var(--colorNegro);
+    padding: 2rem 4rem;
+    border-radius: 5px;
+    font-size: var(--encabezado);
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenedor .texto{
+        width: 40%;
+    }
+
+    .contenedor .texto .encabezado{
+        font-size: var(--titulo);
+    }
+}
+
+@media screen and (max-width:950px) {
+
+.diferencial_domis .container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.diferencial_domis .container .texto{
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.diferencial_domis .container .imagen{
+    width: 90%;
+    background-color: var(--colorBlanco);
+    border-radius: 25px;
+}
+
+}
+
+@media screen and (max-width:850px) {
+    .contenedor .texto .encabezado{
+        font-size: var(--subtitulo);
+        font-weight: bolder;
+    }
+
+    .contenedor .contenedor_one .ventana{
+        border: inherit;
+    }
+
+    .contenedor .contenedor_two .ventana{
+        border: inherit;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .diferencial .contenedor .contenedor_one{
+    flex-direction: column;
+    width: 100%;
+    }
+
+
+
+.contenedor .contenedor_one .ventana img{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+    -webkit-border-radius: 25px;
+-webkit-border-top-right-radius: 500px;
+border-radius: 25px;
+border-top-right-radius: 500px;
+    border: solid var(--colorBlanco);   
+}
+
+.contenedor .contenedor_one .ventana{
+    width: 100%;
+    -webkit-border-radius: 25px;
+-webkit-border-top-right-radius: 500px;
+border-radius: 25px;
+border-top-right-radius: 500px;
+    margin-bottom: 2.5vh;
+}
+
+.contenedor .contenedor_one .texto{
+    width: 100%;
+    text-align: start;
+    margin: auto;
+}
+
+.diferencial .contenedor .contenedor_two{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contenedor .contenedor_two .ventana{
+    width: 100%;
+    -webkit-border-radius: 25px;
+-webkit-border-top-left-radius: 500px;
+border-radius: 25px;
+border-top-left-radius: 500px;
+    margin-bottom: 2.5vh;
+}
+
+.contenedor .contenedor_two .ventana img{
+    width: 100%;
+    max-height: 100vh;
+    -webkit-border-radius: 25px;
+-webkit-border-top-left-radius: 500px;
+border-radius: 25px;
+border-top-left-radius: 500px;
+border: solid var(--colorBlanco); 
+}
+
+.contenedor .contenedor_two .texto{
+    width: 100%;
+    text-align: start;
+}
+
+}
+
+@media screen and (max-width:450px) {
+    .diferencial_domis .btn_domi .btn{
+    padding: 1rem 2rem;
+    font-size: var(--encabezado);
+}
+}

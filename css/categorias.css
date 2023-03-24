@@ -1,0 +1,105 @@
+.categorias_productos{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.categorias_productos .container{
+    width: 90%;
+    padding: 10vh 0;
+    margin: auto;
+}
+
+.categorias_productos .container .tarjeta{
+    width: 100%;
+    height: auto;
+    border: solid var(--colorNegro);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 5vh 0;
+    box-shadow:  30px 30px 41px #cac3af,
+             -30px -30px 41px #f2e9d1;;
+}
+
+.categorias_productos .container .tarjeta .imagen_contenedor{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 1.5rem;
+}
+
+.categorias_productos .container .tarjeta .imagen{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    margin: auto;
+}
+
+.categorias_productos .container .tarjeta .imagen img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+    border-radius: 25px;
+}
+
+.categorias_productos .container .tarjeta .contenido{
+    padding: 1.5rem;
+    width: 65%;
+    margin: auto;
+}
+
+.categorias_productos .container .tarjeta .contenido .titulo .titulo{
+    padding-bottom: 1rem;
+    border-bottom: solid var(--colorNegro) 2.5px;
+}
+
+.categorias_productos .container .tarjeta .contenido .detalles{
+    max-height: 150px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.categorias_productos .container .tarjeta .contenido .tags{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem 2.5rem;
+    overflow: hidden;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.tarjeta .contenido .tags .tag{
+    padding: .5rem 2.5rem;
+    border: solid var(--colorNegro) 2.5px;
+    border-radius: 25px;
+    font-size: var(--subtitulo);
+}
+
+
+.categorias_productos .container .tarjeta a{
+    width: 10%;
+    background-color: var(--colorRojo);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-left: solid var(--colorNegro);
+}
+
+.categorias_productos .container .tarjeta .btn_vermas{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    color: var(--colorBlanco);
+}

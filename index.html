@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/navegacion.css">
     <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/diferenciador.css">
     <link rel="stylesheet" href="./css/google_icons.css">
+    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
 
@@ -24,9 +27,9 @@
             </div>
 
             <div class="links">
-                <a href="#">Nosotros</a>
-                <a href="#horarios">Horarios</a>
-                <a href="#">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <!-- <a href="#horarios">Horarios</a> -->
+                <a href="#categorias">Productos</a>
                 <a href="#">Ubicación</a>
             </div>
 
@@ -47,20 +50,18 @@
                     Ven y disfruta tu tiempo libre como te mereces, sin apuros, solo tú y tu café.
                 </h3>
                 <a href="#" class="boton">
-                    <div class="texto_boton">
+                    <div class="texto_boton" id="horarios">
                         pide tu domi
                     </div>
                 </a>
             </div>
         </div>
     </div>
-</body>
-</html>
 
     <!--HORARIOS DE ATENCIÓN-->
-
+    
     <div class="card">
-        <div class="horarios" id="horarios"> 
+        <div class="horarios">
             <div class="header">
                 <div class="titulo">
                     <h2 class="subtitulo">
@@ -74,7 +75,7 @@
                     <span class="badge"></span>
                 </div>
             </div>
-
+    
             <div class="cuerpo">
                 <div class="semana">
                     <h3 class="subtitulo">
@@ -90,13 +91,292 @@
                         Sábados - Domingos
                         <hr>
                     </h3>
-                    <p class="texto">
+                    <p class="texto" id="nosotros">
                         08:11 - 11:00 AM <br> 01:00 - 3:30 PM
                     </p>
                 </div>
             </div>
+    
+        </div>
+    </div>
+    
+    <!--SOBRE NOSOTROS-->
+    
+    <div class="cabecera">
+        <h1 class="titulo">
+            Conócenos <span class="mark">
+                mejor
+            </span>
+        </h1>
+    
+    </div>
+    
+    <div class="card_nosotros">
+        <div class="container">
+            <div class="imagen">
+            </div>
+            <div class="info">
+                <div class="texto">
+                    <h1 class="titulo">Nuestro hueco de la ciudad.</h1> <br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tenetur doloribus, ea dicta earum
+                    dolorum aperiam dignissimos. Eligendi cumque quos corporis perspiciatis harum eveniet officiis. <br>
+                    <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit tenetur doloribus, ea dicta earum
+                    dolorum aperiam
+                    dignissimos.
+                </div>
+                <a href="#">
+                    <div class="boton_nosotros subtitulo">
+                        Ver galería
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="diferencial">
+        <div class="contenedor">
+            <div class="contenedor_one">
+                <div class="ventana">
+                    <div class="imagen">
+                        <img src="./assets/imagenes/CAFETERIA INTERIOR.jpg" alt="">
+                    </div>
+                </div>
+    
+                <div class="texto">
+                    <h1 class="encabezado">Deja pasar lo cotidiano</h1>
+    
+    
+                    <br>
+    
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam rerum blanditiis quae magnam, aut
+                        corporis sunt doloribus sapiente ipsum molestias. <br> <br> Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Ipsum corrupti accusantium ipsa sit pariatur ducimus dolorum quia vero ullam illo,
+                        enim magni hic at esse.</p>
+                </div>
+            </div>
+    
+            <div class="contenedor_two">
+                <div class="ventana">
+                    <div class="imagen">
+                        <img src="./assets/imagenes/CAFETERIA CONCURRIDA.jpg" alt="">
+                    </div>
+                </div>
+    
+                <div class="texto">
+                    <h1 class="encabezado">Acompañado, el café sabe mejor</h1>
+    
+                    <br>
+    
+                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam rerum blanditiis quae magnam, aut
+                        corporis sunt
+                        doloribus sapiente ipsum molestias. <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Ipsum
+                        corrupti accusantium ipsa sit pariatur ducimus dolorum quia vero ullam illo, enim magni hic at esse.
+                    </p>
 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="vacio" id="categorias">
+
+    <!--CATEGORÍAS PRODUCTOS-->
+    
+    <div class="cabecera" >
+        <h1 class="titulo">
+            Categorías <span class="mark">
+                mejor valoradas
+            </span>
+        </h1>
+    
+    </div>
+    
+    <div class="categorias_productos">
+        <div class="container">
+    
+            <!--Categoría bebidas calientes-->
+    
+            <div class="tarjeta">
+                <div class="imagen_contenedor">
+                    <div class="imagen">
+                        <img src="./assets/imagenes/CAFE DE MESA.jpg" alt="Café de mesa">
+                    </div>
+                </div>
+    
+                <div class="contenido">
+                    <div class="titulo">
+                        <h1 class="titulo">Bebidas calientes</h1>
+                    </div>
+                    <div class="detalles">
+                        <p class="subtitulo">Perfecto para una charla cálida entre amigos o un día frio.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Aromática</span>
+                        <span class="tag">Chocolate</span>
+                        <span class="tag">Café</span>
+                    </div>
+                </div>
+    
+                <a href="#">
+                    <div class="btn_vermas">
+                        <h2 class="subtitulo">
+                            Ver más
+                        </h2>
+                    </div>
+                </a>
+    
+            </div>
+    
+            <!--Categorías Postres-->
+    
+            <div class="tarjeta">
+                <div class="imagen_contenedor">
+                    <div class="imagen">
+                        <img src="./assets/imagenes/PASTEL FONDO.jpg" alt="Café de mesa">
+                    </div>
+                </div>
+    
+                <div class="contenido">
+                    <div class="titulo">
+                        <h1 class="titulo">Postres y panecillos</h1>
+                    </div>
+                    <div class="detalles">
+                        <p class="subtitulo">Perfecto para una charla cálida entre amigos o un día frio.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Torta tres leches</span>
+                        <span class="tag">Torta de pan</span>
+                        <span class="tag">Cupcakes</span>
+                    </div>
+                </div>
+    
+                <a href="#">
+                    <div class="btn_vermas">
+                        <h2 class="subtitulo">
+                            Ver más
+                        </h2>
+                    </div>
+                </a>
+    
+            </div>
+    
+            <!--Categorías desayunos-->
+    
+            <div class="tarjeta">
+                <div class="imagen_contenedor">
+                    <div class="imagen">
+                        <img src="./assets/imagenes/DESAYUNOS FONDO.jpg" alt="Café de mesa">
+                    </div>
+                </div>
+    
+                <div class="contenido">
+                    <div class="titulo">
+                        <h1 class="titulo">Desayunos</h1>
+                    </div>
+                    <div class="detalles">
+                        <p class="subtitulo">Perfecto para una charla cálida entre amigos o un día frio.</p>
+                    </div>
+                    <div class="tags">
+                        <span class="tag">Aromática</span>
+                        <span class="tag">Chocolate</span>
+                        <span class="tag">Café</span>
+                    </div>
+                </div>
+    
+                <a href="#">
+                    <div class="btn_vermas">
+                        <h2 class="subtitulo">
+                            Ver más
+                        </h2>
+                    </div>
+                </a>
+    
+            </div>
+    
+    
         </div>
     </div>
 
-    <!--SOBRE NOSOTROS-->
+
+
+
+    <!--Mapa-->
+
+    <div class="cabecera">
+        <h1 class="titulo">
+            Nuestra dirección <span class="mark">
+                exacta
+            </span>
+        </h1>
+    
+    </div>
+
+    <!--Se puede añadir una función de mapas de google-->
+
+    <div class="mapa_container">
+        <div class="mapa">
+            <img src="./assets/imagenes/MAPA EJEMPLO.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="diferencial_domis">
+        <div class="container">
+            <div class="texto">
+                <h1 class="titulo">
+                    Pedidos para llevar a casa
+                </h1>
+
+                <br><br>
+
+                <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Curabitur
+                aliquet quam id dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.</p>
+            </div>
+
+            <div class="imagen">
+                <div class="container">
+                    <img src="./assets/imagenes/BOLSA DOMICILIOS.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="btn_domi">
+            <a href="#">
+                <div class="btn">
+                    <p class="subtitulo">
+                        ¡Pide un Domi!
+                    </p>
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+
+
+    <!--footer-->
+
+    <footer class="footer">
+        <h1 class="titulo">Página creada por <a href="#">Kevin Santiago Suarez</a></h1>
+    </footer>
+
+
+
+
+
+
+
+</body>
+</html>
+
+   
+
+    <!--Croshair Cryo-->
+    <!--0;s;1;P;o;0.657;f;0;0t;1;0l;3;0v;3;0o;2;0a;1;0f;0;1t;1;1v;1;1o;3;1a;1;1m;0;1f;0-->
+
+    

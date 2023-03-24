@@ -21,6 +21,15 @@ hr{
     margin-bottom: .5rem;
 }
 
+.vacio{
+    border-bottom: solid transparent 150px;
+}
+
+.blanco{
+    border-bottom: solid var(--colorBlanco) 5px;
+    margin: 2rem 0;
+}
+
 html, body{
     box-sizing: border-box;
     transition: .5s all;
@@ -28,6 +37,26 @@ html, body{
     padding: 0;
     margin: 0;
     background-color: var(--colorBlanco);
+}
+
+p{
+    font-size: var(--texto);
+}
+
+.footer{
+    background-color: var(--colorNegro);
+    color: var(--colorTextoClaro);
+    width: 100%;
+    height: auto;
+    padding: 5vh 5%;
+}
+
+.footer .titulo{
+    text-align: center;
+}
+
+.footer .titulo a{
+    border-bottom: var(--colorRojo) solid 5px;
 }
 
 .encabezado{
@@ -60,6 +89,7 @@ html, body{
     align-items: center;
     background: rgb(222,214,192);
 background: linear-gradient(180deg, rgba(222,214,192,0.5) 0%, rgba(245,240,237,1) 100%);
+
 }
 
 .banner_hero .banner_content{
@@ -78,6 +108,7 @@ background: linear-gradient(180deg, rgba(222,214,192,0.5) 0%, rgba(245,240,237,1
     padding: .5rem;
     box-shadow:  20px 20px 60px #bdb6a3,
                 -20px -20px 60px #fff6dd;
+                border: solid var(--colorNegro);
 }
 
 .banner_hero .banner_textos{
