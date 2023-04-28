@@ -15,28 +15,39 @@
     <link rel="stylesheet" href="./css/google_icons.css">
     <link rel="stylesheet" href="./css/categorias.css">
     <link rel="stylesheet" href="./css/form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
+    <!--Botón volver arriba-->
+
+    <button onclick="topFunction()" id="btn-bt" title="Desplazar al inicio"><div>Volver arriba</div> <i class="fa-solid fa-chevron-up"></i></button>
+
     <!--BARRA NAVEGACIÓN-->
 
-    <div class="nav_bar">
-        <div class="items">
-            <div class="logo">
-                <a href="/"><img src="/assets/imagenes/Logo.png" alt="Logotipo de café Orslo"></a>
-            </div>
 
-            <div class="links">
-                <a href="#nosotros">Nosotros</a>
-                <!-- <a href="#horarios">Horarios</a> -->
-                <a href="#categorias">Productos</a>
-                <a href="#ubicacion">Ubicación</a>
-            </div>
+    <header>
+        <a href="" class="logo" onclick="topFunction()" ><i class="fa-solid fa-mug-hot"></i><span>Oslo Café</span></a>
 
-            <div class="socials">
-            </div>
+        <ul class="navbar">
+            <l1 class="item"><a href="#nosotros">Nosotros</a></l1>
+            <l1 class="item"><a href="#categorias">Especialidades</a></l1>
+            <l1 class="item"><a href="#ubicacion">Ubicación</a></l1>
+        </ul>
+
+        <div class="main">
+            <a href="#" class="cta"><i class="fa-solid fa-phone"></i> <span>Llámanos</span></a>
+            <div class="fa-solid fa-ellipsis-vertical" id="menu-nav"></div>
         </div>
-    </div>
+
+    </header>
+
+   
+    
+    
 
     <!--BANNER PRINCIPAL-->
 
@@ -91,7 +102,7 @@
                         Sábados - Domingos
                         <hr>
                     </h3>
-                    <p class="texto" id="nosotros">
+                    <p class="texto" >
                         08:11 - 11:00 AM <br> 01:00 - 3:30 PM
                     </p>
                 </div>
@@ -102,7 +113,7 @@
     
     <!--SOBRE NOSOTROS-->
     
-    <div class="cabecera">
+    <div class="cabecera" id="nosotros">
         <h1 class="titulo">
             Conócenos <span class="mark">
                 mejor
@@ -366,9 +377,12 @@
     </footer>
 
 
+    <div class="vacio-nav-mob">
+
+    </div>
 
 
-
+    <script src="/main.js"></script>
 
 
 </body>
@@ -378,5 +392,8 @@
 
     <!--Croshair Cryo-->
     <!--0;s;1;P;o;0.657;f;0;0t;1;0l;3;0v;3;0o;2;0a;1;0f;0;1t;1;1v;1;1o;3;1a;1;1m;0;1f;0-->
+
+    <!--Shazam crosshair-->
+    <!--0;p;0;s;1;P;c;1;u;3CD070FF;h;0;0l;4;0o;0;0a;1;0f;0;1b;0;A;c;1;h;0;0l;4;0o;0;0a;1;0f;0;1b;0-->
 
     

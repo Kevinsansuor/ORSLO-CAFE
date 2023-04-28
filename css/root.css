@@ -172,6 +172,36 @@ background: linear-gradient(180deg, rgba(222,214,192,0.5) 0%, rgba(245,240,237,1
     text-transform: capitalize;
 }
 
+#btn-bt {
+vertical-align: middle;
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: var(--colorRojo); 
+  color: var(--colorBlanco);
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 1rem; 
+  border: solid var(--colorNegro);
+  transition: all .5s ease;
+  gap: 1.5rem;
+}
+
+#btn-bt i{
+    font-size: 1.25rem;
+}
+
+#btn-bt:hover {
+  background-color: var(--colorBlanco); 
+  color: var(--colorNegro);
+  border: solid var(--colorNegro);
+}
+
 @media only screen and (max-width: 950px) and (min-width: 850px)  {
     .banner_textos .encabezado{
     width: 85%;
