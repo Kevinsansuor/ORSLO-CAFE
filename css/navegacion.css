@@ -112,25 +112,35 @@ header .logo span{
   .navbar{
     overflow: hidden;
     padding: 2rem 2rem;
-    height: 20vh;
-    z-index: 1000;
-    width: 50%;
+    height: auto;
+    z-index: 1;
+    width: 5%;
     color: var(--colorTextoOscuro);
     background-color: var(--colorBlanco);
     border: solid var(--colorNegro);
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 25px;
     transition: all .5s ease ;
     position: absolute;
     /* top: -45%; */
-    top: -5%; right: 0%;
+    top: 10%; right: -20%;
     transform: translate(0%, -100%);
+    transition: all .5s ease;
+    filter: blur(5px);
   }
 
   .navbar.active{
-    display: flex;
+    padding: 2rem 2rem;
+    height: auto;
+    z-index: 1000;
+    right: 0%;
+    top: -10%;
+    width: 75%;
+    flex-direction: column;
+    transition: all 1.5 ease;
+    filter: blur(0);
   }
 
   
@@ -162,5 +172,19 @@ header .logo span{
   height: 12.5vh;
   width: 100%;
   background-color: var(--colorNegro);
+}
+}
+
+@media screen and (max-width:450px) {
+  .navbar{
+width: 100%;
+}
+
+.navbar.active{
+width: 100%;
+}
+
+  .navbar{
+right: -120%;
 }
 }
