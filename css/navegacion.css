@@ -140,7 +140,7 @@ header .logo span{
     position: absolute;
     position: fixed;
     right: 0; left: -8%;
-    top: -950%;
+    top: -650%;
     width: fit-content;
     align-items: center;
     transform: translate(0%, -100%);
