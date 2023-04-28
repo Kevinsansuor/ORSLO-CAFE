@@ -175,6 +175,16 @@ header .logo span{
 }
 }
 
+@media screen and (max-width:950px) {
+  .navbar.active{
+width: 100%;
+}
+
+  .navbar{
+right: -140%;
+}
+}
+
 @media screen and (max-width:450px) {
   .navbar{
 width: 100%;
