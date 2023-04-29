@@ -297,6 +297,26 @@ border-bottom-left-radius: 20px;
     .card_nosotros .info .boton_nosotros{
         padding: 1rem;
     }
+
+    .mapa_container{
+    width: 100%;
+    height: 65vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+.mapa_container .mapa img{
+    border: solid var(--colorNegro);
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow:  20px 20px 60px #bdb6a3,
+                -20px -20px 60px #fff6dd;
+}
 }
 
 

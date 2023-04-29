@@ -66,12 +66,19 @@ header .logo span{
 
 .main #menu-nav{
   display: none;
-  padding: 1rem .5rem;
-  border-radius: 25px;
+  padding: .5rem .5rem;
+  border-radius: 5px;
   border: solid var(--colorTextoClaro);
   cursor: pointer;
+  transition: all .5s ease;
 }
 
+.main #menu-nav:hover,
+.main #menu-nav:active{
+  background-color: var(--colorBlanco);
+  color: var(--colorTextoOscuro);
+  transition: all .5s ease;
+}
 
 .main a:hover{
   transform: scale(1.05);
@@ -143,7 +150,16 @@ header .logo span{
     filter: blur(0);
   }
 
-  
+  .navbar.active a{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: solid var(--colorBlanco);
+  }
+
+  .navbar.active a:hover,
+  .navbar.active a:active{
+    border: solid var(--colorNegro);
+  }  
 
   .main .cta{
     display: flex;
