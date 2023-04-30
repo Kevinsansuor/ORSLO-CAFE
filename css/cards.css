@@ -138,7 +138,7 @@ border-top-right-radius: 20px;
 
 .card_nosotros .imagen { grid-area: imagen; 
     min-height: 85vh;
-background: url(../assets/imagenes/CAFETERIA\ EXTERIOR.jpg);
+background: url(../assets/imagenes/CAFETERIA\ EXTERIOR.avif);
 background-position: center;
 background-size: cover;
 -webkit-border-top-left-radius: 20px;

@@ -115,7 +115,7 @@ background: linear-gradient(180deg, rgba(222,214,192,0.5) 0%, rgba(245,240,237,1
 
 .banner_hero .banner_content{
     position: static;
-    background: url(../assets/imagenes/Fondo1.jpg)no-repeat;
+    background: url(../assets/imagenes/Fondo1.avif)no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
