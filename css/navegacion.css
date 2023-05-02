@@ -80,8 +80,12 @@ header .logo span{
   transition: all .5s ease;
 }
 
+.main a{
+  transition: all .5s ease;
+}
+
 .main a:hover{
-  transform: scale(1.05);
+  transform: translateX(10px);
   transition: .5s ease-in;
 }
 
@@ -165,13 +169,15 @@ header .logo span{
     display: flex;
     position: absolute;
     position: fixed;
-    right: 0; left: -8%;
-    top: -650%;
+    right: 0; left: -15%;
+    top: -850%;
     width: fit-content;
     align-items: center;
     transform: translate(0%, -100%);
     transform: none;
     padding: .5rem 0 .5rem 1.5rem;
+    font-size: 1rem;
+    border: solid var(--colorNegro);
   }
 
   .main .cta span{
